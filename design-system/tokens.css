@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Shastriya Vidhan — Design Tokens
+   Theme: Warm Sacred Modern (Vedic Devotion + Contemporary Digital Trust)
+   WCAG AA / AAA Compliant Contrast Palette
+   ========================================================================== */
+
+:root {
+  /* --- Sacred Color Palette --- */
+  --color-saffron: #E67E22;
+  --color-saffron-hover: #D35400;
+  --color-saffron-light: #FDF3E7;
+  --color-saffron-border: #F8D7B0;
+
+  --color-marigold: #F39C12;
+  --color-marigold-gold: #D4AF37;
+  --color-gold-tint: #FCF7E8;
+  --color-gold-border: #E8D595;
+
+  --color-kumkum: #C8232C;
+  --color-kumkum-hover: #A81C24;
+  --color-kumkum-dark: #7A151C;
+  --color-kumkum-tint: #FDF1F2;
+  --color-kumkum-border: #F7B8BC;
+
+  --color-tulsi-green: #15803D;
+  --color-tulsi-light: #F0FDF4;
+  --color-tulsi-border: #BBF7D0;
+
+  /* --- Neutral & Surface Palette (Warm Sacred Ivory) --- */
+  --surface-base: #FAF7F2;          /* Warm sacred ivory background */
+  --surface-white: #FFFFFF;         /* Crisp card background */
+  --surface-subtle: #F3ECE2;        /* Secondary panel / specs background */
+  --surface-tinted: #FAF2E6;        /* Subtle warm saffron highlight */
+  --surface-dark: #1F2421;          /* Deep temple charcoal for accents */
+  --surface-dark-card: #2B302D;     /* Dark feature card */
+
+  /* --- Text & Contrast Palette (WCAG AA/AAA compliant) --- */
+  --text-primary: #1E293B;          /* 12.8:1 contrast on ivory */
+  --text-secondary: #475569;        /* 6.5:1 contrast on ivory */
+  --text-tertiary: #64748B;         /* 4.5:1 contrast on ivory */
+  --text-on-dark: #F8FAFC;          /* Clean white on dark panels */
+  --text-muted-dark: #CBD5E1;       /* Secondary text on dark panels */
+  --text-brand: #C8232C;            /* Primary devotional red */
+
+  /* --- Lines, Borders & Dividers --- */
+  --border-light: #EFE8DE;
+  --border-medium: #E2D7C8;
+  --border-focus: #C8232C;
+  --border-subtle-gold: #E8D8B6;
+
+  /* --- Shadows & Elevations --- */
+  --shadow-sm: 0 1px 3px rgba(30, 41, 59, 0.05), 0 1px 2px rgba(30, 41, 59, 0.03);
+  --shadow-md: 0 4px 12px rgba(30, 41, 59, 0.06), 0 2px 4px rgba(30, 41, 59, 0.04);
+  --shadow-lg: 0 12px 28px rgba(30, 41, 59, 0.09), 0 4px 10px rgba(30, 41, 59, 0.05);
+  --shadow-warm-glow: 0 8px 30px rgba(230, 126, 34, 0.15);
+  --shadow-kumkum-glow: 0 8px 24px rgba(200, 35, 44, 0.22);
+  --shadow-sticky-bar: 0 -4px 20px rgba(30, 41, 59, 0.1);
+
+  /* --- Radii --- */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  /* --- Typography --- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', -apple-system, sans-serif;
+
+  --font-size-hero: clamp(2.4rem, 5vw, 4.2rem);
+  --font-size-h1: clamp(2.1rem, 4vw, 3.4rem);
+  --font-size-h2: clamp(1.65rem, 3vw, 2.5rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.7rem);
+  --font-size-h4: 1.15rem;
+  --font-size-body-lg: clamp(1.05rem, 1.5vw, 1.25rem);
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-xs: 0.75rem;
+
+  /* --- Layout & Dimensions --- */
+  --container-max: 1240px;
+  --container-wide: 1380px;
+  --header-height: 72px;
+  --mobile-bar-height: 68px;
+
+  /* --- Animation & Transitions --- */
+  --ease-natural: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 0.18s var(--ease-natural);
+  --transition-normal: 0.3s var(--ease-natural);
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Badges */
+.sacred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-saffron-light);
+  color: var(--color-saffron-hover);
+  border: 1px solid var(--color-saffron-border);
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-tulsi-light);
+  color: var(--color-tulsi-green);
+  border: 1px solid var(--color-tulsi-border);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-primary-sacred {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--color-kumkum), #D32F2F);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-kumkum-glow);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-primary-sacred:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, var(--color-kumkum-hover), var(--color-kumkum));
+  box-shadow: 0 10px 28px rgba(200, 35, 44, 0.35);
+}
+
+.btn-whatsapp-sacred {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-whatsapp-sacred:hover {
+  transform: translateY(-2px);
+  background-color: #20BA5A;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.35);
+}
+
+.btn-secondary-sacred {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--surface-white);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-medium);
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn-secondary-sacred:hover {
+  border-color: var(--color-saffron);
+  background-color: var(--color-saffron-light);
+  color: var(--color-saffron-hover);
+}
