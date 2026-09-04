@@ -43,7 +43,9 @@ pooja-samagri/
 │   ├── HomepageTemplate.tsx       # Revised homepage wireframe and layout
 │   ├── PujaServiceTemplate.tsx    # 600-800+ words SEO-ready service template (Rudrabhishek)
 │   ├── LocationPageTemplate.tsx   # Localized city landing template (Noida / NCR)
-│   └── PujaGuidesHubTemplate.tsx  # Dedicated SEO content hub for guides & checklists
+│   ├── PujaGuidesHubTemplate.tsx  # Dedicated SEO content hub for guides & checklists
+│   └── OfferLandingPageTemplate.tsx # High-converting 20% Off festive offer landing page
+├── offer.html                     # Standalone 20% OFF festive offer landing page (Code: VEDIC20)
 ├── SEO_AND_UX_RATIONALE.md        # Exhaustive design rationale (CRO vs SEO mapping)
 ├── index.html                     # Fully interactive live browser prototype
 ├── .gitignore
@@ -57,12 +59,14 @@ pooja-samagri/
 You can test the complete redesign immediately without running a build server:
 
 1. **Direct Browser Preview:**
-   Open `index.html` directly in any modern web browser (Chrome, Safari, Edge, Firefox).
+   - Open `index.html` directly in any modern web browser to test all 5 integrated template views.
+   - Open `offer.html` directly to experience the dedicated 20% OFF campaign landing page with live countdown timer and interactive coupon code box (`VEDIC20`).
 2. **Top Showcase Switcher:**
    - **1. Homepage:** Explore the hero trust stack, category switcher, bento cards, Pandit showcase, and FAQ accordion.
    - **2. Puja Service Page:** Test the sticky Table of Contents, 7-step authentic vidhi timeline, and samagri responsibility matrix.
    - **3. Location Page:** Review apartment fire-safety hawan guidelines and neighborhood sector coverage for Noida.
    - **4. Guides Hub:** Test category filtering, search, and contextual "Book Pandit Ji" mini-cards.
+   - **5. 🎁 20% Off Offer:** Test the festive promotional landing page, live countdown timer, interactive coupon copy (`VEDIC20`), and before/after pricing cards.
    - **⚡ Test Booking Funnel:** Click any *Book Pandit Ji* button to interact with the 4-step modal form, live price calculator, and transparent status visual.
 
 ---
